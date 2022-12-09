@@ -51,7 +51,7 @@
 import axios from 'axios';
 
 export default {
-    name: 'EditCategory',
+    name: 'EditCourse',
     data() {
         return {
             id: this.$route.params.id,

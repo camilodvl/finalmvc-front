@@ -33,10 +33,6 @@
           <td>{{curso.d_hours}}</td>
           <td><button class="btn btn-danger" v-on:click="deleteCourse(curso.id)"><i class="fa-solid fa-trash"></i></button></td>
           <td><router-link :to="('/courses/edit/'+curso.id)"><i class="fa-solid fa-pen-to-square" style="color: darkgoldenrod"></i></router-link></td>
-
-          <!--<td><router-link :to="('/category/details/'+categoria.id)"><i class="fa-solid fa-circle-info" data-toggle="tooltip" data-placement="left" title="Detalles"></i></router-link></td>
-          <td><button class="btn btn-danger" v-on:click="deleteCategory(categoria.id)"><i class="fa-solid fa-trash"></i></button></td>
-          <td><router-link :to="('/category/edit/'+categoria.id)"><i class="fa-solid fa-pen-to-square" style="color: darkgoldenrod"></i></router-link></td>-->
         </tr>
       </tbody>
     </table>

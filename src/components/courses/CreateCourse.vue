@@ -44,7 +44,7 @@
 import axios from 'axios';
 
 export default{
-    name: 'CreateCategory',
+    name: 'CreateCourse',
     data(){
         return{
             formData:{
