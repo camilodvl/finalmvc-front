@@ -7,6 +7,7 @@ import EditCourse from '../src/components/courses/EditCourse.vue'
 import ProgramList from '../src/components/programs/ProgramList.vue'
 import CreateProgram from '../src/components/programs/CreateProgram.vue'
 import AddCourseToProgram from '../src/components/programs/AddCourseToProgram.vue'
+import ProgramDetail from '../src/components/programs/ProgramDetail.vue'
 
 
 const routes = [
@@ -15,7 +16,8 @@ const routes = [
     { path: '/courses/edit/:id', component: EditCourse },
     { path: '/', component: ProgramList },
     { path: '/programs/create', component: CreateProgram },
-    { path: '/programs/addcourse', component: AddCourseToProgram }
+    { path: '/programs/addcourse', component: AddCourseToProgram },
+    { path: '/programs/detail/:id', component: ProgramDetail }
   ]
 
   //crear instancia del router

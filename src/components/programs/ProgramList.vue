@@ -19,7 +19,7 @@
                     <p>Conoce mas información sobre el programa de {{ programa.name }} consultando la malla curricular
                     </p>
                     <p class="lead">
-                        <router-link :to="('/programs/addcourse')"><button class="btn btn-primary">Malla Curricular</button></router-link>
+                        <router-link :to="('/programs/detail/'+programa.id)"><button class="btn btn-primary">Malla Curricular</button></router-link>
                     </p>
                 </div>
             </div>
@@ -44,12 +44,6 @@ export default {
         fetch('http://127.0.0.1:8000/api/program')
             .then(response => response.json())
             .then((data) => (this.programas = data))
-    },
-    methods: {
-        deleteCourse(id) {
-            axios.delete("http://127.0.0.1:8000/api/course/" + id + "/destroy").then(id => console.log(location.reload()));
-
-        }
     }
 }
 </script>
