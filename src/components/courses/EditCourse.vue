@@ -60,6 +60,7 @@ export default {
     },
 
     created() {
+        
         fetch('http://localhost:8000/api/course/' + this.id)
             .then(response => response.json())
             .then((data) => (this.curso = data))

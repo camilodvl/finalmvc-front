@@ -51,7 +51,29 @@ export default {
     },
 
 
-    created() {
+    async created() {
+        const token = localStorage.getItem('token-mvc');
+        if(token == null){
+            alert("No esta logeado")
+            this.$router.push('/login')
+        }else{
+
+            const options = {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': token
+            }
+           }
+           const response = await fetch("http://127.0.0.1:8000/api/validate", options)
+           const data = await response.json();
+           if(data.decano ==0){
+                alert("No tiene permisos de acceso")
+                this.$router.push('/')
+           }
+
+        }     
+
         fetch('http://127.0.0.1:8000/api/course')
             .then(response => response.json())
             .then((data) => (this.cursos = data))
