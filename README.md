@@ -7,7 +7,7 @@
 # Opcion Elegida: 1 (Canvas)
 
 # Video explicativo:
-[VSCode](https://youtu.be/_LiXTbylT84)
+[Video](https://youtu.be/_LiXTbylT84)
 
 # Script Base de datos (Se tiene un usuario Decano, y uno estudiante)
 ```sh
