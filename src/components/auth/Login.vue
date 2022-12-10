@@ -14,7 +14,7 @@
             </div>
 
 
-            <input type="submit" class="btn btn-primary" value="Crear">
+            <input type="submit" class="btn btn-primary" value="Login">
         </form>
     </div>
 
@@ -24,7 +24,7 @@
 import axios from 'axios';
 
 export default {
-    name: 'CreateProgram',
+    name: 'login',
     data() {
         return {
             formData: {

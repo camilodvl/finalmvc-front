@@ -6,6 +6,9 @@
 
 # Opcion Elegida: 1 (Canvas)
 
+# Video explicativo:
+[VSCode](https://youtu.be/_LiXTbylT84)
+
 # Script Base de datos (Se tiene un usuario Decano, y uno estudiante)
 ```sh
 INSERT INTO finalmvc.programs (name,created_at,updated_at) VALUES
@@ -34,9 +37,4 @@ INSERT INTO finalmvc.users (name,email,email_verified_at,password,rol,remember_t
 	 ('camilo','camilo.228@hotmail.com','2022-12-10 19:41:22','Qwer1234','D','','2022-12-10 19:41:22','2022-12-10 19:41:22');
 
 ```
-
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-
 

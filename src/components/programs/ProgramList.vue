@@ -5,7 +5,7 @@
 
     <div class="container container d-flex justify-content-around">
         <router-link :to="('/programs/create')"><button class="btn btn-primary">Agregar Programa</button></router-link>
-        <router-link :to="('/programs/addcourse')"><button class="btn btn-primary">Agregar Curso a al
+        <router-link :to="('/programs/addcourse')"><button class="btn btn-primary">Agregar Curso al
                 programa</button></router-link>
     </div>
 
